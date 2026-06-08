@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ Chatbot</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div id="app">
+  <div id="header">
+    <div class="avatar">🐶</div>
+    <div class="info">
+      <div class="name">🐾 Pet Store Assistant</div>
+      <div class="status">● Online</div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">
+    🌙
+  </button>
+  </div>
+  <div id="msgs"></div>
+  <div id="suggestions"></div>
+  <div id="inputrow">
+    <input type="text" id="qInput" placeholder="Ask me anything..." autocomplete="off" />
+    <button id="micBtn" title="Voice Input">🎙️</button>
+    <button id="sendBtn">Send ➤</button>
+</div>
+</div>
+<script type="module" src="PetChatBot.js"></script>
+</body>
+</html>
