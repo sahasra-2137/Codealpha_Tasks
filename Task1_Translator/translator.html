@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>AI Language Translator</h1>
+        <p>Translate text instantly </p>
+    </div>
+    <div class="toggle-bar">
+        <label class="live-toggle">
+            <input type="checkbox" id="liveMode" checked>
+             Live Translation
+        </label>
+    </div>
+    <div class="translator-grid">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-label">From</span>
+                <select id="sourceLang">
+                    <option value="auto" selected>Auto Detect</option>
+                    <option value="en">English</option>
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="kn">Kannada</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                </select>
+            </div>
+            <textarea id="inputText" placeholder="Type or paste text here..."></textarea>
+            <div id="detectedLanguage" class="info-box detected"></div>
+            <div class="card-footer">
+                <span id="charCount" class="char-count">0 characters</span>
+                <div class="btn-group">
+                    <button class="btn btn-warning" onclick="startVoiceInput()">Voice</button>
+                    <button class="btn btn-secondary" onclick="speakInputText()">Speak</button>
+                </div>
+            </div>
+        </div>
+        <div class="swap-column">
+            <button class="swap-btn" onclick="swapLanguages()" title="Swap languages">⇄</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-label">To</span>
+                <select id="targetLang">
+                    <option value="en" selected>English</option>
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="kn">Kannada</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                </select>
+            </div>
+            <textarea id="outputText" placeholder="Translation will appear here..." readonly></textarea>
+            <div id="detectedBox" class="info-box detected"></div>
+            <div id="meaningBox" class="info-box meaning"></div>
+            <div id="voiceBox" class="info-box voice"></div>
+            <div class="card-footer">
+                <span class="char-count"></span>
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="speakTranslatedText()">Speak</button>
+                    <button class="btn btn-success" onclick="copyText()">Copy</button>
+                    <button class="btn btn-danger" onclick="clearAll()">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="translate-section">
+        <button class="translate-btn" onclick="translateText()">Translate Now</button>
+    </div>
+    <div class="history-section">
+        <div class="history-header">
+            <span class="history-title">Recent Translations</span>
+        </div>
+        <div id="historyContainer" class="history-container"></div>
+    </div>
+</div>
+ <script src="https://unpkg.com/aromanize"></script>
+ <script src="transl.js"></script>
+</body>
+</html>
