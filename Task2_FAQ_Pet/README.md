@@ -1,21 +1,21 @@
 An FAQ based chatbot designed for pet store websites. The chatbot helps users with pet adoption,grooming,pet food recommendations,vetinary services,order tracking and general pet care 
 
-Features 
-Semantic search using Transformers.js
-Voice to text support
-Text to speech support 
-Dark/Light mode toggle
-Pet adoption assistance
-Small talk conversation handling 
-Confidence score display for responses 
+Features :
+Semantic search using Transformers.js,
+Voice to text support,
+Text to speech support, 
+Dark/Light mode toggle,
+Pet adoption assistance,
+Small talk conversation handling, 
+Confidence score display for responses. 
 
-Technologies Used 
-HTML
-CSS
-JavaScript
-Transformers.js
-Xenonva/all-MiniLM-L6-v2 Embedding Model
-Browser Speech Recognition 
+Technologies Used :
+HTML,
+CSS,
+JavaScript,
+Transformers.js,
+Xenonva/all-MiniLM-L6-v2 Embedding Model,
+Browser Speech Recognition.
 
 How It Works
 1. User enters a query
