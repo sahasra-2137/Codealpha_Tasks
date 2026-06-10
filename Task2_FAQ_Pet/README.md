@@ -23,6 +23,9 @@ How It Works
 3. Semantic similarity is calculated against stored FAQs
 4. The most relevant answer is returned
 
+Live Demo 
+https://sahasra-2137.github.io/Codealpha_Tasks/Task2_FAQ_Pet/
+
 SCREENSHOTS
 Light Mode
 <img width="1274" height="800" alt="Screenshot 2026-06-10 181222" src="https://github.com/user-attachments/assets/57f2f8d2-b456-4ee8-9a18-6c86f6a51859" />
@@ -30,7 +33,6 @@ Light Mode
 Dark Mode
 <img width="1278" height="800" alt="Screenshot 2026-06-10 181304" src="https://github.com/user-attachments/assets/20b45024-68a8-4c9e-985e-5ad615211719" />
 
-Live Demo 
-https://sahasra-2137.github.io/Codealpha_Tasks/Task2_FAQ_Pet/
+
 
 
